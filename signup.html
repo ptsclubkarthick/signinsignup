@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Day11 Internship Signup</title>
+    <style>
+        label[required]::after {
+            content: '*';
+            color: red;
+        }
+        textarea{
+            resize: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Tags</h1>
+    <fieldset>
+        <legend>SignUp Page</legend>
+        <br>
+        <form action="https://stackoverflow.com">
+            <label for="username" required>Username</label>
+            <input id="username" type="text" placeholder="username" minlength="8" maxlength="20" required autofocus>
+            <br>
+            <br>
+            <label for="firstname">Firstname</label>
+            <input id="firstname" type="text" placeholder="firstname" minlength="1" maxlength="20" required>
+            <br>
+            <br>
+            <label for="lastname">Lastname</label>
+            <input id="lastname" type="text" placeholder="lastname" minlength="1" maxlength="20" required>
+            <br>
+            <br>
+            <label for="phoneNumber">Phone number</label>
+            <input id="phoneNumber" type="number" placeholder="phone number" required>
+            <br>
+            <br>
+            <label for="emailId">Email Id</label>
+            <input id="emailId" type="email" placeholder="email id" required>
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="password" minlength="8" maxlength="20" required>
+            <br>
+            <br>
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" type="password" placeholder="confirm password" minlength="8" maxlength="20"
+                required>
+            <br>
+            <br>
+            <label for="age">Age</label>
+            <input id="age" type="number" placeholder="age" required>
+            <br>
+            <br>
+            <label for="dob">Date of Birth</label>
+            <input id="dob" type="date" required>
+            <br>
+            <br>
+            <label for="gender">Gender</label>
+            <input id="male" type="radio" name="gender" required>
+            <label for="male">Male</label>
+            <input id="female" type="radio" name="gender" required>
+            <label for="female">Female</label>
+            <br>
+            <br>
+            <label for="maritalStatus">Marital Status</label>
+            <input id="single" type="radio" name="maritalStatus" required>
+            <label for="single">Single</label>
+            <input id="married" type="radio" name="maritalStatus" required>
+            <label for="married">Married</label>
+            <br>
+            <br>
+            <label for="address">Address</label>
+            <textarea id="address" rows="5" cols="20" maxlength="2" required></textarea>
+            <br>
+            <br>
+            <label for="place">Place</label>
+            <input id="place" type="text" placeholder="place" minlength="2" maxlength="30" required>
+            <br>
+            <br>
+            <label for="country">Country</label>
+            <select required>
+                <option value="">select any country</option>
+                <option value="India">India</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+                <option value="Russia">Russia</option>
+            </select>
+            <br>
+            <br>
+            <label for="state">State</label>
+            <select required>
+                <option value="">select any state</option>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+            <br>
+            <br>
+            <label for="position">Choose your Area of Interest</label>
+            <select name="position" id="position">
+                <optgroup label="Front End Development">
+                    <option value="reactJsDeveloper">React js Developer</option>
+                    <option value="angularJsDeveloper">Angular js Developer</option>
+                </optgroup>
+                <optgroup label="Back End Development">
+                    <option value="nodeJsDeveloper">Node js Developer</option>
+                    <option value="pythonDeveloper">Python Developer</option>
+                </optgroup>
+                <optgroup label="Full Stack Development">
+                    <option value="mernStackDeveloper">MERN Stack Developer</option>
+                    <option value="meanStackDeveloper">MEAN Stack Developer</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <label for="file">Upload your Photo</label>
+            <input id="file" type="file" accept="image" required>
+            <br><br>
+            <label for="certificates">Upload your Certificates</label>
+            <input id="certificates" type="file" required multiple>
+            <br><br>
+            <label for="color">Choose your favorite color</label>
+            <input id="color" type="color">
+            <br><br>
+            <label for="color">Choose your Mother Language</label>
+            <input list="lang" required>
+            <datalist id="lang">
+                <option value="Tamil">Tamil</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </datalist>
+            <br><br>
+            <label for="range">Range your English Communication Skill</label>
+            <input type="range" value="70" required>
+            <br><br>
+            <label for="timingAvalability">At what date & timing you available for discussion</label>
+            <input type="datetime-local" required>
+            <br><br>
+            <label for="graduationDetails">What is your graduation month and year</label>
+            <input id="graduationDetails" type="month" required>
+            <br><br>
+            <label for="startWeek">What week would you like to start our program?</label>
+            <input id="startWeek" type="week" required>
+            <br><br>
+            <label for="expectations">Can you give some expectations from us?</label>
+            <input id="expectations" type="search" minlength="1" maxlength="50" required>
+            <br><br>
+            <label for="acceptPrivacyPolicy">
+                <input id="acceptPrivacyPolicy" type="checkbox" required>
+                Agree Privacy Policy
+            </label>
+            <br><br>
+            <input type="reset">
+            <button>Signup</button>
+        </form>
+        <br>
+        <br>
+        <a href="index.html">Already have an account? Sign in</a>
+        <br><br><br>
+    </fieldset>
+</body>
+
+</html>
